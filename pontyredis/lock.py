@@ -37,7 +37,13 @@ def redislock(
     ttl_ms: int = 1000,
     **kw
 ) -> Lock:
-    """Shared mutex. Use to enforce access limits on a resource across processes.
+    """Shared lease. Use to enforce access limits on a resource across processes.
+
+    Best-suited for efficiency purposes, i.e. helping to avoid doing the same
+    work twice. The difficulties and limitations of distributed locks are
+    well-documented, and this is a rather naive approach; if correctness is
+    at a premium (i.e. concurrently doing the same work breaks the state of
+    your system), you should choose something more robust.
 
     scope: prefix to avoid collisions
     ttl_ms: reduce deadlocks by auto-expiring the lock after <ttl> millis
