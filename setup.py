@@ -12,7 +12,7 @@ if __name__ == "__main__":
         description="Redis provider for ponty.",
         install_requires=[
             "aioredis==1.3.1",
-            "ponty==0.1.0",
+            "ponty==0.2.1",
         ],
         python_requires=">=3.8",
         classifiers=[

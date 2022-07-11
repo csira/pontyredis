@@ -1,6 +1,6 @@
 import typing
 
-from ponty.memo.lock import SentinelStore, Lock
+from ponty.memo import SentinelStore, Lock
 
 from pontyredis.provider import lease_redis_conn
 
