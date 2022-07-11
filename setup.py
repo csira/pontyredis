@@ -4,6 +4,7 @@ from setuptools import find_packages, setup
 if __name__ == "__main__":
     setup(
         packages=find_packages(),
+        package_data={"pontyredis": ["py.typed"]},
         name="pontyredis",
         version="0.2.1",
         license="BSD",
