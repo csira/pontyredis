@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
-import aioredis
+import aioredis  # type: ignore
 
 from ponty import Provider
 from ponty.registry import Registry
