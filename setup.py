@@ -3,10 +3,9 @@ from setuptools import find_packages, setup
 
 if __name__ == "__main__":
     setup(
-        packages=find_packages(include=["pontyredis", "pontyredis/*"]),
+        packages=find_packages(),
         name="pontyredis",
-        version="0.1.0",
-        author_email="cbsira@gmail.com",
+        version="0.2.1",
         license="BSD",
         url="https://github.com/csira/pontyredis",
         description="Redis provider for ponty.",
