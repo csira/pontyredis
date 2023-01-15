@@ -6,13 +6,13 @@ if __name__ == "__main__":
         packages=find_packages(),
         package_data={"pontyredis": ["py.typed"]},
         name="pontyredis",
-        version="0.2.1",
+        version="0.2.2",
         license="BSD",
         url="https://github.com/csira/pontyredis",
         description="Redis provider for ponty.",
         install_requires=[
             "aioredis==1.3.1",
-            "ponty==0.2.1",
+            "ponty>=0.2.1",
         ],
         python_requires=">=3.8",
         classifiers=[
